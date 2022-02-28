@@ -8,8 +8,8 @@ function noEnvia(e){
     console.log("funciona");
 }
 
-const urlAutos = `http://localhost/tpe/PaginaWeb/api/autos`;
-const urlCarrito = `http://localhost/tpe/PaginaWeb/api/carrito`;
+const urlAutos = `http://localhost/pagina/api/autos`;
+const urlCarrito = `http://localhost/pagina/api/carrito`;
 const result = document.getElementById("total");
 
 getAutos(urlAutos);
