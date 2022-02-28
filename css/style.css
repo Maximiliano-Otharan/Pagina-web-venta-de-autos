@@ -1,0 +1,375 @@
+/*Mobile View*/
+
+body{
+    background-color: rgb(192, 185, 185);
+    margin: 0px;
+}
+
+button{
+    border-radius: 10px;
+    border-left: 5px;
+    border-bottom: 5px;
+}
+/********************************************* Menu Responsive ************************************/
+    .MenuResponsive{
+        display:none;
+    }
+    #MenuRespo{
+        width: 100%;
+    }
+
+    .Navegacion-principal{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        box-shadow: -5px 5px 5px rgb(107, 105, 105);
+        margin-bottom: 1rem;
+ 
+    }
+/********************************************* INDEX ************************************/
+    h1{
+        text-transform: uppercase;
+        
+    }
+    .autos{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(192, 185, 185);
+        
+    }
+    .autos img{
+        margin: 0 auto;
+        max-width: 100%;
+        width: 80%;
+    }
+
+    .left,.right{
+        display: flex;
+        align-items: center;
+        background-color: rgb(192, 185, 185);
+        flex-direction:column;
+        text-transform: capitalize;
+        border-style: groove;
+        
+    }
+    li{
+        list-style: none;
+    }
+    .left img, .right  img{
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        width: 80%;
+    }
+    
+    
+    .left h2, .right h2{
+        box-shadow: -5px 5px 5px rgb(107, 105, 105);
+        
+    }
+    aside{
+        display: flex;
+        flex-direction:column;
+        border-style: groove;
+    }
+
+    .vehiculos-disponibles{
+        box-shadow: -5px 5px 5px rgb(107, 105, 105);
+        margin-bottom: 1rem;
+    }
+    
+/********************************************* CONTACTO ************************************/
+    fieldset{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .titulo-contacto{
+        box-shadow: -5px 5px 5px rgb(107, 105, 105);
+        margin-bottom: 1rem;
+    }
+    #btn-enviar{
+        max-width: 100%;
+        width: 80%;
+        margin-left: 10%;
+        margin-bottom: 2%;
+        
+    }
+    .dato{
+        display:block;
+        max-width: 100%;
+        width: 80%;
+        margin: 0 auto;
+        background-color: white;
+
+    }
+    legend {
+        text-align: center;
+    }
+    
+/********************************************* TABLA DINAMICA ************************************/
+    .contenedor{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .autosDisponibles{
+        display: flex;
+        justify-content: center;
+    }
+    .carrito{
+        height: 10rem;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    table{
+        border-bottom: 5px black solid;
+    }
+    thead{
+        background-color: rgb(179, 27, 27);
+        color: rgb(192, 185, 185);
+    }
+    
+/********************************************* LISTA ESPECIFICACIONES  ************************************/
+
+    .autosEspecificaciones{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .listaAuto{
+        background-color: rgb(179, 27, 27);
+        color: rgb(192, 185, 185);
+    }
+
+/********************************************* ESPECIFICACIONES-BMW ************************************/
+    .Especificaciones-bmw ,.bmw, .titulo-bmw{
+        display: flex;
+        max-width: 25rem;
+        width: 15rem;
+        flex-wrap: wrap;
+
+    }
+    .conteiner img{
+        display: flex;
+        max-width: 25rem;
+        width: 15rem;
+        margin: 0 auto;
+    }
+/********************************************* ENCABEZADO ************************************/
+    .Encabezado{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    a{
+        color: rgb(179, 27, 27);
+    }
+    
+    a:hover{
+        transition: all .2s;
+        border: rgb(192, 185, 185) 2px inset
+    }
+/********************************************* FOOTER ************************************/
+    footer{
+        text-transform: uppercase;
+        border-top: solid;
+        text-align: center;
+        background-color:rgb(179, 27, 27) ;
+        color: rgb(192, 185, 185);
+        width: 100%;
+    }
+/********************************************* TABLA COMPRA ************************************/
+    .total-estilo{
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(231, 227, 227);
+        width: 100%;
+        color: rgb(179, 27, 27);
+        font-size: 1.8rem;
+        box-shadow: -5px 5px 5px rgb(107, 105, 105);
+        margin-bottom: 1rem;
+    }
+ /********************************************* DESKTOP-VIEW ************************************/
+@media only screen and (min-width:840px)
+    {
+ /********************************************* INDEX ************************************/
+        .left,.right{
+            display: flex;
+            align-items: center;
+            background-color: rgb(231, 227, 227);
+            flex-direction:column;
+            text-transform: capitalize;
+            border-style: groove;
+        }
+        .autos img{
+            display: flex;
+            flex-wrap: wrap;
+        }
+            .autos img:hover{
+                transition: all .4s;
+                transform: scale(1.1);
+            }
+            .informacion{
+            display: flex;
+            border-bottom: solid;
+            justify-content: space-around;
+            box-shadow: 5px 5px 5px rgb(107, 105, 105);
+        }
+        .left img, .right  img{
+            width: 42em;
+            height: 28em;
+        }
+
+        .Navegacion-principal{
+            display: flex;
+            padding: auto;
+            margin: auto;
+        }
+        .autos{
+            display: flex;
+            flex-direction: row;
+            background-color: rgb(231, 227, 227);
+            
+        }
+        .Encabezado{
+            background-color: rgb(231, 227, 227);
+            margin-bottom: auto;
+            height: 100%;
+        }
+        a{
+            color: black;
+        }
+        #Items-Menu{
+            display: flex;
+            margin: auto;
+        }
+        li {
+
+            list-style: none;
+            max-width: 100% ;
+            width: 80%;
+            
+            
+        }
+        a:hover{
+            transition: all .2s;
+            border: rgb(231, 227, 227) 2px inset
+        }
+ /********************************************* TFOOTER ************************************/
+        footer{
+            text-transform: uppercase;
+            width: 100%;
+            border-top: solid;
+            text-align: center;
+            background-color:rgb(179, 27, 27) ;
+            margin: auto;
+            margin-right: auto;
+            color: rgb(192, 185, 185);
+        }
+        body{
+            background-color: rgb(192, 185, 185);
+        }
+/********************************************* LISTA ESPECIFICAIONES ************************************/
+
+        .autosEspecificaciones{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .listaAuto{
+            background-color: rgb(179, 27, 27);
+            color: rgb(192, 185, 185);
+            border-radius: 50px;
+        }
+
+/********************************************* TABLA DINAMICA ************************************/
+    .contenedor{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 100%;
+    }
+    .autosDisponibles{
+        display: flex;
+        align-items: center;
+        width: 50%;
+    }
+    .carrito{
+        display: flex;
+        justify-content: flex-start;
+        width: 50%;
+        height: 200px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    table{
+        border-bottom: 5px black solid;
+    }
+    thead{
+        background-color: rgb(179, 27, 27);
+        color: rgb(192, 185, 185);
+    }
+    /*ESPECIFICACIONES-BMW*/
+        .Especificaciones-bmw ,.bmw, .titulo-bmw{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: nowrap;
+        }
+                .conteiner{
+                    display: flex;
+                    justify-content: space-around
+                }
+/********************************************* CONTACTO ************************************/
+                fieldset{
+                    display: flex;
+                    flex-direction: column;
+                }
+                #btn-enviar{
+                    max-width: 35%;
+                    margin-left: 10%;
+                    margin-bottom: 2%;
+                    
+                }
+                .dato{
+                    display:flex;
+                    width: 50%;
+                    background-color: lightgray;
+                    margin-left: 5%;
+                    margin-bottom: 2%;
+                }
+                legend {
+                    text-align: center;
+    }
+/********************************************* TOTAL COMPRA ************************************/
+                .total-estilo{
+                    background-color: rgb(231, 227, 227);
+                    width: 100%;
+                    color: rgb(179, 27, 27);
+                    font-size: 1.8rem;
+                    box-shadow: -5px 5px 5px rgb(107, 105, 105);
+                    margin-bottom: 1rem;
+                }
+                
+                .precio{
+                    background-color: rgb(179, 27, 27);
+                    color: #f5c814;
+                }
+                
+                .Navegacion-principal{
+                    background-color: rgb(231, 227, 227);
+                    box-shadow: 5px 5px 5px rgb(107, 105, 105);
+                    margin-bottom: 10px;
+                }
+                
+                #MenuRespo{
+                    display: none;
+                }
+            }   

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/38116dd924.js" crossorigin="anonymous"></script>
+    <title>Contacto</title>
+</head>
+<body>
+    <header class="Encabezado">
+        <h1><i class="fas fa-car">CARS-MOTORS</i></h1>
+    </header>
+    <nav class="Navegacion-principal">
+        <button id="MenuRespo">Navegacion</button>
+        <ul id="Items-Menu">
+            <li><a href="index.html"><i class="fas fa-house-user">Home</i></a></li>
+            <li><a href="Especificaciones.html" ><i class="fas fa-book">Especificaciones</i></a></li>
+            <li><a><i class="fas fa-comment-dots">Contacto</i></a></li>
+            <li><a href="Compra.html"><i class="fas fa-dollar-sign">Compra</i></a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2 class = "titulo-contacto">Contactanos para mas informacion</h2>
+        <form id="form">
+            <fieldset>
+                <legend><span>Complete los siguientes datos</span></legend>
+                <label for="nombre">Nombre:</label><input class="dato" type="text" name="Nombre" id="DatoNombre" placeholder="Nombre" required>
+                <label for="apellido">Apellido:</label><input class="dato" type="text" name="Apellido" id="DatoApellido" placeholder="Apellido" required>
+                <label for="numero de telefono">Numero de telefono:</label><input class="dato" type="number" name="Numero de telefono" id="DatoTelefono" placeholder="Numero telefonico" required>
+                <label for="email">Correo electronico:</label><input class="dato" type="email" name="correo" id="DatoEmail"placeholder="Email" required>
+                <label for="consultar-vehiculo">Consulta:</label> <textarea class="dato" name="Consulta" id="Consulta" cols="30" rows="10" r></textarea>
+                <label for="Captcha">Escriba el numero <span id="numero"></span> dentro del captcha</label> <input type="number" name="Numero" class="dato" id="Captcha" required>
+                <p id="Resultado-Captcha"></p>
+                <button id="btn-enviar">Enviar</button>
+            </fieldset>
+        </form>
+    
+    </main>
+    <footer>
+        cars-motors|2021 Todos los derechos reservados  
+    </footer>
+    <script src="js/contacto.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>

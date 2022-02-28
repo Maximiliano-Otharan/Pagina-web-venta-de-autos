@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h2 class = "titulo-contacto">Agregar un auto a la base de datos</h2>
+        <form id="form">
+            <fieldset>
+                <legend><span>Complete los siguientes datos</span></legend>
+                <label for="Auto_a_agregar">
+                    <p>Modelo <input type="text" name="modelo" id="modelo"></p>
+                    <p>Pais de origen <input type="text" name="pais" id="pais"></p>
+                    <p>Motor <input type="text" name="motor" id="motor"></p>
+                    <p>Peso <input type="text" name="peso" id="peso"></p>
+                    <p>Traccion <input type="text" name="traccion" id="traccion"></p>
+                    <p>Tipo de carroceria <input type="text" name="carroceria" id="carroceria"></p>
+                    <p>Potencia <input type="text" name="potencia" id="potencia"></p>
+                    <p>Velocidad maxima <input type="text" name="velocidad" id="velocidad"></p>
+                    <p>Combustible <input type="text" name="combustible" id="combustible"></p>
+                    <p>Precio <input type="number" name="precio" id="precio"></p>
+                    <p>Id <input type="number" name="id" id="id"></p>
+                </label>
+                <button id="agregar">Agregar</button>
+                <button id="modificar">Modificar</button>
+            </fieldset>
+        </form>
+        <section id="autosParaEliminar"></section>
+        <script src="js/admin.js"></script>
+</body>
+</html>
